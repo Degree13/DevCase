@@ -63,3 +63,24 @@ body{
     color : black;
 }
 
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.grid-item {
+    padding-left: 20px;
+    font-size: 30px;
+    text-align: left;
+    max-height: 50px;
+}
+
+.images{
+    height: 500px;
+    width: 250px;
+}
+
