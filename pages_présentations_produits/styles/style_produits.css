@@ -1,0 +1,91 @@
+@font-face{
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+img {
+    max-width: 100%
+}
+
+.menu{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:flex-start;
+    border: 20px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.item{
+    text-decoration: none;
+    color: white;
+    margin : 15px;
+}
+
+.divider{
+    margin-left: 30px;
+}
+
+.divider2{
+    margin-left: 35%;
+}
+
+.divider3{
+    margin-top: 30px;
+}
+
+.bag{
+    max-height: 25px;
+    min-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.zoomimg{
+    max-height: 20px;
+    min-height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+}
+
+.bagcounter{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 20px;  
+}
+
+.menumargin{
+    margin-left: 100px;
+}
+
+.searchoption{
+    color: gray;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-around;
+    
+}
+
+.container_image {
+    display: flex;
+    order: 1;
+    align-content: center;
+}
+
+.container_texte {
+    display: flex;
+    order: 2;
+    align-content: center;
+}
