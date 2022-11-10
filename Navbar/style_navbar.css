@@ -78,14 +78,20 @@ body{
         overflow: hidden;
     }
 
-    .menu_img{
-        display:true;
-        height:60px;
-        margin-top: 2%;
+    .menu_img {
+        display: true;
+        height: 40px;
+        margin-top: 25px;
         margin-bottom: 15px;
-        margin-right:2%;
-        margin-left:auto;
-    }  
+        margin-right: 25px;
+        margin-left: auto;
+      }
+    
+      .searchoption input{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      } 
 }
 
 .item{
