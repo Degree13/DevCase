@@ -18,7 +18,7 @@ body {
   width: 100%;
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1110px) {
   .menu_img {
     display: none;
   }
@@ -28,7 +28,7 @@ body {
   }
 }
 
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1110px) {
   .menu {
     width: 0%;
     height: 0%;
@@ -72,11 +72,17 @@ body {
 
   .menu_img {
     display: true;
-    height: 60px;
-    margin-top: 2%;
+    height: 40px;
+    margin-top: 25px;
     margin-bottom: 15px;
-    margin-right: 2%;
+    margin-right: 25px;
     margin-left: auto;
+  }
+
+  .searchoption input{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 
