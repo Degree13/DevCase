@@ -12,11 +12,11 @@ body{
 .menu{
     background-color: black;
     color: white;
-    display: flex;
+    display:inline-flex;
     justify-content:flex-start;
     border: 20px;
     font-size: 18px;
-    overflow: hidden;
+    width:100%;
 }
 
 .item{
@@ -25,23 +25,23 @@ body{
     margin : 15px;
 }
 
+.item2{
+    text-decoration: none;
+    color: white;
+    margin : 15px;
+    margin-right:60px;
+}
+
 .divider{
     margin-left: 30px;
 }
 
 .divider2{
-    margin-left: 35%;
+    margin-left: 10vw;
 }
 
 .divider3{
     margin-top: 30px;
-}
-
-.bag{
-    max-height: 25px;
-    min-height: 25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .zoomimg{
@@ -52,11 +52,19 @@ body{
     margin-left: 25px;
 }
 
-.bagcounter{
+.bag{
+    max-height: 25px;
+    min-height: 25px;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 20px;  
+    margin-right:10px;
+    margin-left:auto;
+}
+
+.bagcounter{
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    margin-right:40px;
 }
 
 .menumargin{
@@ -99,22 +107,24 @@ body{
 .grid-item3 {
     columns:auto;
     display: inline-block;
-    padding-left: 20px;
     font-size: 30px;
     text-align: left;
     max-height: 40px;
-}
-
-
-.images{
-    margin-top: 50px;
-    max-height: 150px;
-    max-width: auto;
+    width:95%;
+    margin-left:20px;
 }
 
 img {
     max-width: 100%
 }
+
+.images{
+    margin-top: 50px;
+    width: 5.5em;
+    max-width: 200px;
+    height: auto;
+}
+
 
 .container {
     margin-top: 20px;
@@ -125,7 +135,7 @@ img {
 }
 
 .container2 {
-    margin-top: 23%;
+    margin-top: 5.5em;
     flex-wrap: wrap;
     display:grid;
     column-gap: 10px;
@@ -133,7 +143,6 @@ img {
 }
 
 .container3 {
-    flex-wrap: wrap;
     display:grid;
     column-gap: 10px;
     grid-template-columns: 40% 60%;
@@ -146,8 +155,10 @@ img {
 .text {
     margin-top: 40px;
     line-height : 16px;
-    font-size: 20px;
+    font-size: 0.7em;
     text-align: left;
+    margin-left:2.4em;
+    white-space: nowrap;
 }
 
 .textleft {
@@ -236,7 +247,7 @@ img {
 }
 
 .ligne{
-    margin-top:32%;
+    margin-top:7.4em;
     border: solid #C5C7C9;
     background-color: #C5C7C9;
     overflow: hidden;
@@ -244,7 +255,7 @@ img {
 }
 
 .lignenoir{
-    margin-top:8%;
+    margin-top:2em;
     margin-right:70px;
     border: solid black;
     background-color: black;
@@ -267,7 +278,7 @@ form.example input[type=text] {
     float: left;
     width: 80%;
     background: white;
-  }
+}
 
 .summary-checkout {
     display: block;
@@ -275,7 +286,20 @@ form.example input[type=text] {
     margin-top:10px;
     text-decoration: none;
 }
-  
+
+input[type=button], input[type=submit] {
+    display: block;
+    float: none;
+    font-size: 0.90rem;
+    text-align: center;
+    padding: 0.625rem 0;
+    width: 100%;
+    color:white;
+    background-color: black;
+    width:85%;
+    cursor: pointer;
+  }
+
 .checkout-cta {
     display: block;
     float: none;
@@ -321,3 +345,4 @@ form.example input[type=text] {
   span.glyphicon {
     margin-left: 3px;
   }
+
