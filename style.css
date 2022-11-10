@@ -8,7 +8,6 @@ body{
     margin: 0;
 }
 
-
 .menu{
     background-color: black;
     color: white;
@@ -19,10 +18,86 @@ body{
     width:100%;
 }
 
+@media all and (min-width: 1280px)
+{
+    .menu_img{
+        display:none;   
+    }
+
+    .sidenav{
+        display:none;
+    }
+}
+
+@media all and (max-width: 1280px)
+{
+    .menu{
+        width:0%;
+        height:0%;
+        background-color: white;
+        text-size-adjust: 0px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .searchoption{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .menu2{
+        width:100%;
+        background-color: black;
+    }
+
+    .item{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .item2{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .zoomimg{
+        display:none;
+    }
+    
+    .bag{
+        display:none;
+    }
+    
+    .bagcounter{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .menu_img{
+        display:true;
+        height:60px;
+        margin-top: 2%;
+        margin-bottom: 15px;
+        margin-right:2%;
+        margin-left:auto;
+    }  
+}
+
 .item{
     text-decoration: none;
     color: white;
     margin : 15px;
+    transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transform-origin: 50% 50%;
+}
+
+.item:hover{
+    transform: scale(1.2);
 }
 
 .item2{
@@ -30,6 +105,12 @@ body{
     color: white;
     margin : 15px;
     margin-right:60px;
+    transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transform-origin: 50% 50%;
+}
+
+.item2:hover{
+    transform: scale(1.2);
 }
 
 .divider{
@@ -99,9 +180,14 @@ body{
     font-size: 30px;
     text-align: left;
     max-height: 40px;
-    padding-top: 180px;
+    margin-top: 180px;
     font-size :20px;
     color: black;
+}
+
+.grid-item2:hover{
+    color:red;
+    font-weight:bold;
 }
 
 .grid-item3 {
@@ -184,6 +270,7 @@ img {
     size:10px;
     line-height: 0px;
     color:#999999;
+    white-space: nowrap;
 }
 
 .textleft5 {
@@ -232,6 +319,12 @@ img {
     color:#999999;
 }
 
+.policiestext{
+    color:#999999;
+    font-size: 1.2em;
+    width:225%;
+}
+
 .checkouttext {
     margin-top: 60px;
     font-size: 26px;
@@ -254,6 +347,16 @@ img {
     border-width: 1px;
 }
 
+.ligne2{
+    border: solid #C5C7C9;
+    background-color: #C5C7C9;
+    overflow: hidden;
+    border-width: 1px;
+    width:256%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 .lignenoir{
     margin-top:2em;
     margin-right:70px;
@@ -268,6 +371,7 @@ img {
     background-color: black;
     overflow: hidden;
     border-width: 1px;
+    width:103%;
 }
 
 form.example input[type=text] {
@@ -287,7 +391,7 @@ form.example input[type=text] {
     text-decoration: none;
 }
 
-input[type=button], input[type=submit] {
+input[type=submit] {
     display: block;
     float: none;
     font-size: 0.90rem;
@@ -297,6 +401,12 @@ input[type=button], input[type=submit] {
     color:white;
     background-color: black;
     width:85%;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+    color:black;
+    background-color: white;
     cursor: pointer;
   }
 
@@ -310,39 +420,3 @@ input[type=button], input[type=submit] {
     color:white;
     background-color: black;
   }
-
-  /* A voir si ça marche */
-  .wrapper {
-    width: 600px;
-    margin: 20px auto;
-  }
-  
-  .desc-wrapper {
-    margin: 0 auto;
-    margin-bottom: 15px;
-    max-height: 120px;
-    overflow: hidden;
-  }
-  
-  .more-info {
-    /* Hide more info to begin with and reveal if text inside desc is too long*/
-    display: none;
-  }
-  
-  /* Only display 'more' to begin with */
-  .more-info .less,
-  .more-info.expand .more {
-    display: none;
-  }
-  .more-info.expand .less {
-    display: inline;
-  }
-  
-  /* Misc, just to make things look a bit prettier */
-  .more-info:focus {
-    outline: none;
-  }
-  span.glyphicon {
-    margin-left: 3px;
-  }
-

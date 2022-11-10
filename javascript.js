@@ -1,30 +1,16 @@
-$(document).ready(function() {
-  
-    var descMinHeight = 120;
-    var desc = $('.desc');
-    var descWrapper = $('.desc-wrapper');
-  
-    // show more button if desc too long
-    if (desc.height() > descWrapper.height()) {
-      $('.more-info').show();
-    }
-    
-    // When clicking more/less button
-    $('.more-info').click(function() {
-      
-      var fullHeight = $('.desc').height();
-  
-      if ($(this).hasClass('expand')) {
-        // contract
-        $('.desc-wrapper').animate({'height': descMinHeight}, 'slow');
-      }
-      else {
-        // expand 
-        $('.desc-wrapper').css({'height': descMinHeight, 'max-height': 'none'}).animate({'height': fullHeight}, 'slow');
-      }
-  
-      $(this).toggleClass('expand');
-      return false;
-    });
-  
-  });
+var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("openBtn");
+var closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
+}
