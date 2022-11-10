@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="javascript.js"></script>
+    <!--<script src="javascript.js"></script>-->
     <!--<script src="nav.js"></script>-->
     <title>Shopping Cart</title>
     <link rel="icon" type="image/x-icon" href="sac-de-courses.png">
@@ -44,21 +44,19 @@
             About
         </a>
     
-        <img class="zoomimg" src="zoom.png">
-        <a class="item" href="WIP.NoLinkYet">
-            <div class="searchoption">
-                Search
-            </div>
-        </a>
+        <img class="zoomimg" src="zoom.png" alt="icone">
+        <form class="searchoption" action="/" method="post">
+            <input class="input" type="text" placeholder="Search" name="search">
+        </form>
         <div class="divider2"></div>
     
-        <a href="#" class="bag"><img class="bag" src="sac-de-courses.png"></a>
+        <a href="#" class="bag"><img class="bag" src="sac-de-courses.png" alt="icone"></a>
         <div class="bagcounter">2</div>
     
         <a class="item2" href="WIP.NoLinkYet">
             Login
         </a>
-        <img class="menu_img" src="menu.png">
+        <img class="menu_img" src="menu.png" alt="icone">
     </nav>
 
     <div class="grid-container">
@@ -69,7 +67,7 @@
         <div class="grid-item">
             <div class="container">
                 <div class="images">
-                   <img src="phonecase1.png">
+                   <img src="phonecase1.png" alt="icone">
                 </div>
                 <div class="text">
                    <h3>Unicore Phone Case</h3>
@@ -109,7 +107,7 @@
         <div class="grid-item">
             <div class="container2">
                 <div class="images">
-                   <img src="phonecase2.png">
+                   <img src="phonecase2.png" alt="icone">
                 </div>
                 <div class="text">
                    <h3>Chicken Phone Case</h3>
@@ -147,7 +145,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
        <!-- footer -->
     <footer class="footer">
@@ -158,8 +155,8 @@
             </p>
             <form>
                 <div class="inputContainer">
-                    <input type="text" class="input" placeholder="a">
-                    <label for="" class="label">Email Address</label>
+                    <input type="text" class="input" placeholder="a" id="1">
+                    <label for="1" class="label">Email Address</label>
                 </div>
             </form>
         </div>

@@ -39,12 +39,6 @@ body {
     overflow: hidden;
   }
 
-  .searchoption {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
   .menu2 {
     width: 100%;
     background-color: black;
@@ -159,10 +153,6 @@ body {
   margin-left: 100px;
 }
 
-.searchoption {
-  color: gray;
-}
-
 .grid-container {
   flex-wrap: wrap;
   display: grid;
@@ -171,6 +161,9 @@ body {
   padding-top: 50px;
   padding-left: 10%;
   padding-right: 10%;
+}
+.grid-item-none {
+  display:none;
 }
 
 .grid-item {
@@ -205,6 +198,7 @@ body {
   max-height: 40px;
   width: 95%;
   margin-left: 20px;
+  margin-top:70px;
 }
 
 img {
@@ -235,6 +229,8 @@ img {
 }
 
 .container3 {
+  width:95%;
+  margin-top:-40px;
   display: grid;
   column-gap: 10px;
   grid-template-columns: 40% 60%;
@@ -345,7 +341,7 @@ img {
 }
 
 .ligne {
-  margin-top: 7.4em;
+  margin-top: 190px;
   border: solid #c5c7c9;
   background-color: #c5c7c9;
   overflow: hidden;
@@ -363,7 +359,9 @@ img {
 }
 
 .lignenoir {
+  width:84%;
   margin-top: 2em;
+  margin-bottom: 1em;
   margin-right: 70px;
   border: solid black;
   background-color: black;
@@ -376,16 +374,18 @@ img {
   background-color: black;
   overflow: hidden;
   border-width: 1px;
-  width: 103%;
+  width: 100%;
+  margin-bottom:70px;
 }
 
 form.example input[type="text"] {
-  margin-top: 70px;
   padding: 10px;
+  margin:10px;
+  margin-left:0px;
   font-size: 17px;
   border: 1px solid grey;
   float: left;
-  width: 80%;
+  width: 82%;
   background: white;
 }
 
@@ -396,23 +396,35 @@ form.example input[type="text"] {
   text-decoration: none;
 }
 
-input[type="submit"] {
+body input[type="submit"] {
   display: block;
-  float: none;
   font-size: 0.9rem;
   text-align: center;
   padding: 0.625rem 0;
-  width: 100%;
   color: white;
   background-color: black;
   width: 85%;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+body input[type="submit"]:hover {
   color: black;
   background-color: white;
   cursor: pointer;
+}
+
+::placeholder {
+  color: gray;
+  font-size: 18px;
+}
+
+.searchoption input{
+  padding-top:2px;
+  margin-top:18px;
+  margin-left:5px;
+  color: white;
+  background-color: black;
+  border:0px;
 }
 
 .checkout-cta {
@@ -424,6 +436,61 @@ input[type="submit"]:hover {
   width: 100%;
   color: white;
   background-color: black;
+}
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+footer .inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+/* Style the inputs */
+footer .input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+/* Hide the placeholder texts (a) */
+footer ::placeholder {
+  color: transparent;
+}
+
+footer .inputContainer .label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+footer .input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(72, 212, 212);
 }
 
 .footer {
