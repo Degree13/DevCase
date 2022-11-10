@@ -140,6 +140,13 @@ body{
     margin-bottom: 15px;
     margin-right:10px;
     margin-left:auto;
+    transition: transform 0.3s cubic-bezier(0.55, 0, 0.55, 0.2),
+    color 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  transform-origin: 50% 50%;
+}
+
+.bag:hover{
+    transform: scale(1.2);
 }
 
 .bagcounter{
