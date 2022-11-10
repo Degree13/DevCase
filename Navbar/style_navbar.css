@@ -168,3 +168,12 @@ body{
 .searchoption{
     color: gray;
 }
+
+.searchoption input{
+    padding-top:2px;
+    margin-top:18px;
+    margin-left:5px;
+    color: white;
+    background-color: black;
+    border:0px;
+  }
