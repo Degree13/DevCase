@@ -1,0 +1,157 @@
+@font-face{
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+.menu{
+    background-color: black;
+    color: white;
+    display:inline-flex;
+    justify-content:flex-start;
+    border: 20px;
+    font-size: 18px;
+    width:100%;
+}
+
+@media all and (min-width: 1280px)
+{
+    .menu_img{
+        display:none;   
+    }
+
+    .sidenav{
+        display:none;
+    }
+}
+
+@media all and (max-width: 1280px)
+{
+    .menu{
+        width:0%;
+        height:0%;
+        background-color: white;
+        text-size-adjust: 0px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .searchoption{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .menu2{
+        width:100%;
+        background-color: black;
+    }
+
+    .item{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .item2{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .zoomimg{
+        display:none;
+    }
+    
+    .bag{
+        display:none;
+    }
+    
+    .bagcounter{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .menu_img{
+        display:true;
+        height:60px;
+        margin-top: 2%;
+        margin-bottom: 15px;
+        margin-right:2%;
+        margin-left:auto;
+    }  
+}
+
+.item{
+    text-decoration: none;
+    color: white;
+    margin : 15px;
+    transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transform-origin: 50% 50%;
+}
+
+.item:hover{
+    transform: scale(1.2);
+}
+
+.item2{
+    text-decoration: none;
+    color: white;
+    margin : 15px;
+    margin-right:60px;
+    transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transform-origin: 50% 50%;
+}
+
+.item2:hover{
+    transform: scale(1.2);
+}
+
+.divider{
+    margin-left: 30px;
+}
+
+.divider2{
+    margin-left: 10vw;
+}
+
+.divider3{
+    margin-top: 30px;
+}
+
+.zoomimg{
+    max-height: 20px;
+    min-height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+}
+
+.bag{
+    max-height: 25px;
+    min-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right:10px;
+    margin-left:auto;
+}
+
+.bagcounter{
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    margin-right:40px;
+}
+
+.menumargin{
+    margin-left: 100px;
+}
+
+.searchoption{
+    color: gray;
+}
