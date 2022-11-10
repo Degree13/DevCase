@@ -189,6 +189,7 @@ body {
   margin-top: 180px;
   font-size: 20px;
   color: black;
+  transition:0.7s ease;
 }
 
 .grid-item2:hover {
@@ -411,6 +412,7 @@ body input[type="submit"] {
   background-color: black;
   width: 85%;
   cursor: pointer;
+  transition: 0.7s ease;
 }
 
 body input[type="submit"]:hover {
