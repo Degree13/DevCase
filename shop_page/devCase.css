@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+.rectangle {
+    background-color: black;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 115px;
+    margin: 0;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h2{
+    margin-left: 45px;
+    margin-top: 37px;
+    width: 183px;
+    height: 44px;
+    font-family: Public sans;
+}
+
+
+h3{
+    width: 69px;
+    height: 20px;
+    margin-top: 50px;
+    margin-left: 45px;
+    font-family: Public sans;
+    color: black;
+}
+
+.my-checkbox {
+    margin-right: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  
+.my-checkbox-x2 {
+    margin: 20px 15px 0 0;
+    margin-left: 50px;
+  }
+  
+.my-checkbox-x3 {
+    margin: 20px 15px 0 0;
+    margin-left: 50px;
+  }
+
+.my-checkbox-x4 {
+    margin: 20px 15px 0 0;
+    margin-left: 50px;
+  }
+  
+.my-checkbox-x5 {
+    margin: 20px 15px 0 0;
+    margin-left: 50px;
+  }
+
+  .my-checkbox-x6 {
+    margin: 20px 15px 0 0;
+    margin-left: 50px;
+  }
+
+  .read-article{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+    color: #000;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: arial;
+    text-decoration: none;
+    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
+  }
+  .read-article:hover{
+      background: #d5d5d5;
+      box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
+  }
+  iframe[sandbox] .read-article{
+    display: none;
+  }
+
+.colorBouttons{
+    display : flex;
+    margin-left: 40px;
+    
+}
+
+.element2 input[type=submit]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 330px;
+}
+
+.element1{
+    margin-left: 100px;
+}
+
+p{
+    width: 800px;
+}
+  
+.dot1 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+  
+.dot2{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.dot3{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 4, 255);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.dot4{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(72, 255, 0);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+  
+.dot5 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(195, 0, 255);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+  
+.dot6{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 186, 38);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.dot7{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(252, 84, 148);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.dot8{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 217, 255);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+    margin: 0 -5px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #d1cbcb;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+.grid{
+    display: flex;
+}
+
+.image {
+    display:block;
+    height: 300px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit] {
+    display: block;
+    float: none;
+    font-size: 0.90rem;
+    text-align: center;
+    padding: 0.625rem 0;
+    color:black;
+    background-color: white;
+    width:20%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+input[type=submit]:hover {
+    color:white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+.element2{
+    justify-items: center;
+}
+
+.footer
+{
+  background-color:#ffffff;
+  padding:45px 0 20px;
+  font-size:20px;
+  line-height:24px;
+  color:#494949;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.footer h4
+{
+  color:rgb(29, 29, 29);
+  font-size:30px;
+  text-transform:uppercase;
+  letter-spacing:2px
+}
+.footer h5
+{
+  color:rgb(35, 35, 35);
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.footer a
+{
+  color:#5b5a5a;
+  text-decoration: none;
+}
+.footer a:hover
+{
+  color:#5264AE;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#2c2b2b
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#5264AE;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+
+.copyright-text
+{
+  margin:0
+}
+
+@media (max-width:800px)
+{
+  .footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:800px)
+{
+  .footer
+  {
+    padding-bottom:0
+  }
+  .footer .copyright-text,.footer 
+  {
+    text-align:center
+  }
+}
+
+.content{
+  margin-left: 10 px;
+  margin-right: 10 px;
+}
+
+.content-footer{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+@media (max-width:800px){
+  .footer{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .content-footer{
+    display: flex;
+  }
+  .image-logo{
+    display: block;
+  }
+}
+
+@media (max-width:800px){
+  .element2{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .grid{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+}
+
