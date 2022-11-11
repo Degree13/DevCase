@@ -365,9 +365,6 @@ input[type=submit]:hover {
   .image-logo{
     display: block;
   }
-}
-
-@media (max-width:800px){
   .element2{
     display: block;
     margin-top: 10px;
