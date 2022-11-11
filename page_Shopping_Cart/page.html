@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="javascript.js"></script>
+    <!--<script src="javascript.js"></script>-->
     <!--<script src="nav.js"></script>-->
     <title>Shopping Cart</title>
     <link rel="icon" type="image/x-icon" href="sac-de-courses.png">
@@ -25,51 +25,55 @@
 
     <nav class="menu menu2">
         <div class="menumargin"></div>
-        <a class="item" href="index.html">
+        <a class="item" href="../index.html">
             <strong>Ecommerce</strong>     
         </a>
         <div class="divider"></div>
         
-        <a class="item" href="WIP.NoLinkYet">
+        <a class="item" href="../shop_page/devCase.html">
             Shop
         </a>
         <div class="divider"></div>
     
-        <a class="item" href="WIP.NoLinkYet">
+        <a class="item" href="#">
             Stories
         </a>
         <div class="divider"></div>
     
-        <a class="item" href="WIP.NoLinkYet">
+        <a class="item" href="#">
             About
         </a>
     
-        <img class="zoomimg" src="zoom.png">
-        <a class="item" href="WIP.NoLinkYet">
-            <div class="searchoption">
-                Search
-            </div>
-        </a>
+        <img class="zoomimg" src="zoom.png" alt="icone">
+        <form class="searchoption" action="/" method="post">
+            <input class="input" type="text" placeholder="Search" name="search">
+        </form>
         <div class="divider2"></div>
     
-        <img class="bag" src="sac-de-courses.png">
+        <a href="#" class="bag"><img class="bag" src="sac-de-courses.png" alt="icone"></a>
         <div class="bagcounter">2</div>
     
-        <a class="item2" href="WIP.NoLinkYet">
+        <a class="item2" href="#">
             Login
         </a>
-        <img class="menu_img" src="menu.png">
+        <img class="menu_img" src="menu.png" alt="icone">
     </nav>
 
     <div class="grid-container">
         <div class="grid-item"><h3>Your cart</h3></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><div class="checkouttext"><h6>Not ready to checkout ? Continue shopping</h6></div></div>
+        <div class="grid-item4">
+            <div class="checkouttext">
+                Not ready to checkout ?
+                <a class="continue" href="../shop_page/devCase.html">Continue shopping</a>
+            </div>
+        </div>
+        <div class="divider4"></div><div class="divider4"></div>
         <div class="grid-item"><h5>Order Summary</h5></div>
         <div class="grid-item">
             <div class="container">
                 <div class="images">
-                   <img src="phonecase1.png">
+                   <img src="phonecase1.png" alt="icone">
                 </div>
                 <div class="text">
                    <h3>Unicore Phone Case</h3>
@@ -77,7 +81,7 @@
                    <h5>Quantity: 1</h5>
                    <h3>20€</h3>
                 </div>
-                <a class="grid-item2" href="/">
+                <a class="grid-item2" href="#">
                     <h6><u>Remove</u></h6>
                 </a>
             </div>
@@ -109,7 +113,7 @@
         <div class="grid-item">
             <div class="container2">
                 <div class="images">
-                   <img src="phonecase2.png">
+                   <img src="phonecase2.png" alt="icone">
                 </div>
                 <div class="text">
                    <h3>Chicken Phone Case</h3>
@@ -117,7 +121,7 @@
                    <h5>Quantity: 1</h5>
                    <h3>20€</h3>
                 </div>
-                <a class="grid-item2" href="/">
+                <a class="grid-item2" href="#">
                     <h6><u>Remove</u></h6>
                 </a>
             </div>
@@ -147,12 +151,66 @@
                 </div>
             </div>
         </div>
-    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
 
-    
+       <!-- footer -->
+    <footer class="footer">
+        <div class="content">
+            <h5>Sign up for our newsletter</h5>
+            <p>
+                Be the first to know about our special offers, new product launches, and events.
+            </p>
+            <form>
+                <div class="inputContainer">
+                    <input type="text" class="input" placeholder="a" id="1">
+                    <label for="1" class="label">Email Address</label>
+                </div>
+            </form>
+        </div>
 
-       <footer>
-       </footer>
+        <div class="content-footer">
+            <div class="content">
+                <h6>Shop</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Xiaomi</a></li>
+                    <li><a href="#">Huawei</a></li>
+                    <li><a href="#">Wiko</a></li>
+                    <li><a href="#">Google</a></li>
+                </ul>
+            </div>
 
+            <div class="content">
+                <h6>Help</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Size Chart</a></li>
+                    <li><a href="#">Returns & Warranty</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        
+            <div class="content">
+                <h6>About</h6>
+                <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Responsability</a></li>
+                <li><a href="#">Technology & Innovation</a></li>
+                <li><a href="#">Explore our stories</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

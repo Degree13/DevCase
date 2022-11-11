@@ -78,14 +78,20 @@ body{
         overflow: hidden;
     }
 
-    .menu_img{
-        display:true;
-        height:60px;
-        margin-top: 2%;
+    .menu_img {
+        display: true;
+        height: 40px;
+        margin-top: 25px;
         margin-bottom: 15px;
-        margin-right:2%;
-        margin-left:auto;
-    }  
+        margin-right: 25px;
+        margin-left: auto;
+      }
+    
+      .searchoption input{
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      } 
 }
 
 .item{
@@ -136,10 +142,17 @@ body{
 .bag{
     max-height: 25px;
     min-height: 25px;
-    margin-top: 15px;
+    margin-top: 6px;
     margin-bottom: 15px;
     margin-right:10px;
     margin-left:auto;
+    transition: transform 0.3s cubic-bezier(0.55, 0, 0.55, 0.2),
+    color 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  transform-origin: 50% 50%;
+}
+
+.bag:hover{
+    transform: scale(1.2);
 }
 
 .bagcounter{
@@ -155,3 +168,12 @@ body{
 .searchoption{
     color: gray;
 }
+
+.searchoption input{
+    padding-top:2px;
+    margin-top:18px;
+    margin-left:5px;
+    color: white;
+    background-color: black;
+    border:0px;
+  }
