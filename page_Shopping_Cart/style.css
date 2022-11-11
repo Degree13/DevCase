@@ -125,6 +125,10 @@ body {
   margin-top: 30px;
 }
 
+.divider4 {
+  margin-top: -30px;
+}
+
 .zoomimg {
   max-height: 20px;
   min-height: 20px;
@@ -206,6 +210,15 @@ body {
   width: 95%;
   margin-left: 20px;
   margin-top:70px;
+}
+
+.grid-item4 {
+  display: inline-block;
+  margin-top:60px;
+  padding-left: 20px;
+  font-size: 30px;
+  text-align: left;
+  max-height: 40px;
 }
 
 img {
@@ -331,11 +344,22 @@ img {
   color: #999999;
   font-size: 1.2em;
   width: 225%;
+  white-space: nowrap;
 }
 
 .checkouttext {
-  margin-top: 60px;
   font-size: 26px;
+}
+
+.continue{
+  text-decoration: none;
+  color: black;
+  transition:0.7s ease;
+  white-space: nowrap;
+}
+
+.continue:hover{
+  color:blue;
 }
 
 .summary-order {
